@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper]{amsart}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage[latin2]{inputenc}
+\usepackage{t1enc}
+\usepackage[mathscr]{eucal}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{pict2e}
+\usepackage{epic}
+\numberwithin{equation}{section}
+\usepackage[margin=2.9cm]{geometry}
+\usepackage{epstopdf} 
+
+ \def\numset#1{{\\mathbb #1}}
+
+ 
+
+\theoremstyle{plain}
+\newtheorem{Th}{Theorem}[section]
+\newtheorem{Lemma}[Th]{Lemma}
+\newtheorem{Cor}[Th]{Corollary}
+\newtheorem{Prop}[Th]{Proposition}
+
+ \theoremstyle{definition}
+\newtheorem{Def}[Th]{Definition}
+\newtheorem{Conj}[Th]{Conjecture}
+\newtheorem{Rem}[Th]{Remark}
+\newtheorem{?}[Th]{Problem}
+\newtheorem{Ex}[Th]{Example}
+
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Hom}{{\rm{Hom}}}
+\newcommand{\diam}{{\rm{diam}}}
+\newcommand{\ovl}{\overline}
+%\newcommand{\M}{\mathbb{M}}
+
+\begin{document}
+
+\title{Formulas Governing Vector Functions }
+
+
+
+\maketitle
+
+\begin{enumerate}
+	\item $(\vec{\mathbf{F}}+\vec{\mathbf{G}})(t) = \vec{\mathbf{F}}(t) + \vec{\mathbf{G}}(t)  $
+	\item $(\vec{\mathbf{F}}-\vec{\mathbf{G}})(t) = \vec{\mathbf{F}}(t) - \vec{\mathbf{G}}(t)  $
+	\item $(\phi\vec{\mathbf{F}})(t) = \phi(t) \vec{\mathbf{F}}(t)  $
+	\item $(\vec{\mathbf{F}}\times\vec{\mathbf{G}})(t) = \vec{\mathbf{F}}(t) \times{\mathbf{G}}(t)  $
+	\item $(\vec{\mathbf{F}}\cdot\vec{\mathbf{G}})(t) = \vec{\mathbf{F}}(t) \cdot{\mathbf{G}}(t)  $ - Notice that this is a scalar.
+\end{enumerate}
+
+\hspace{0.6in}
+
+\textbf{Rules of Vector Limits}
+\begin{enumerate}
+	\item Limit of a sum or difference $$lim_{t\to t_0}\left[\vec{\mathbf{F}}(t) \pm \vec{\mathbf{G}}(t)\right] = lim_{t\to t_0}\vec{\mathbf{F}}(t) \pm lim_{t\to t_0}\vec{\mathbf{G}}(t) $$
+	
+	\item Limit of a scalar multiple $$lim_{t\to t_0}\left[ \phi(t) \vec{\mathbf{F}}(t)\right] = \left[lim_{t\to t_0} \phi(t)\right]  \left[lim_{t\to t_0}\vec{\mathbf{F}}(t)\right] $$
+	
+	\item Limit of a dot product $$lim_{t\to t_0}\left[ \vec{\mathbf{F}}(t)\cdot \vec{\mathbf{G}}(t)\right] = \left[lim_{t\to t_0}\vec{\mathbf{F}}(t)\right] \cdot \left[lim_{t\to t_0}\vec{\mathbf{G}}(t)\right] $$
+	
+	\item Limit of a cross product $$lim_{t\to t_0}\left[ \vec{\mathbf{F}}(t)\times \vec{\mathbf{G}}(t)\right] = \left[lim_{t\to t_0}\vec{\mathbf{F}}(t)\right] \times \left[lim_{t\to t_0}\vec{\mathbf{G}}(t)\right] $$
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
